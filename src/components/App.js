@@ -1,14 +1,12 @@
 import React from 'react';
-import { Routes, Route, Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Greetings from './Greetings';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Greetings />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route exact path="/" element={<Greetings />} />
+    </Routes>
   );
 }
 
